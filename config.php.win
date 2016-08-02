@@ -1,0 +1,27 @@
+<?php
+// HTTP
+define('HTTP_SERVER', 'http://localhost/leshare/');
+
+// HTTPS
+define('HTTPS_SERVER', 'http://localhost/leshare/');
+
+// DIR
+define('DIR_APPLICATION', 'C:/xampp/htdocs/leshare/catalog/');
+define('DIR_SYSTEM', 'C:/xampp/htdocs/leshare/system/');
+define('DIR_LANGUAGE', 'C:/xampp/htdocs/leshare/catalog/language/');
+define('DIR_TEMPLATE', 'C:/xampp/htdocs/leshare/catalog/view/theme/');
+define('DIR_CONFIG', 'C:/xampp/htdocs/leshare/system/config/');
+define('DIR_IMAGE', 'C:/xampp/htdocs/leshare/image/');
+define('DIR_CACHE', 'C:/xampp/htdocs/leshare/system/cache/');
+define('DIR_DOWNLOAD', 'C:/xampp/htdocs/leshare/system/download/');
+define('DIR_UPLOAD', 'C:/xampp/htdocs/leshare/system/upload/');
+define('DIR_MODIFICATION', 'C:/xampp/htdocs/leshare/system/modification/');
+define('DIR_LOGS', 'C:/xampp/htdocs/leshare/system/logs/');
+
+// DB
+define('DB_DRIVER', 'mysqli');
+define('DB_HOSTNAME', 'localhost');
+define('DB_USERNAME', 'lfx');
+define('DB_PASSWORD', 'lfx,123');
+define('DB_DATABASE', 'lfx');
+define('DB_PREFIX', 'mcc_');

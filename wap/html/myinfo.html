@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta content="telephone=no" name="format-detection" />
+    <title>好就分享</title>
+    <link rel="stylesheet" href="../css/myinfo.css"/>
+    <script type="text/javascript">
+        function cleanInput(){
+            document.getElementById("pwdcur").value="";
+            document.getElementById("newpwd1").value="";
+            document.getElementById("newpwd2").value="";
+        }
+    </script>
+</head>
+<body onload="cleanInput()">
+<!-- header S -->
+<div class="header">
+    <div class="logo">好就分享</div>
+    <a href="javascript:void(0)" class="menu">菜单</a>
+    <a href="javascript:void(0)" class="search">搜索</a>
+    <a href="javascript:void(0)" class="buy">购物车</a>
+    <div class="search-cont">
+        <div class="l-logo">好就分享</div>
+        <div class="search-box">
+            <input type="text" class="text" placeholder="搜索"/>
+        </div>
+        <a href="javascript:void(0)" class="search-btn">取消</a>
+    </div>
+</div>
+<div class="menu-cont">
+    <div class="mlist-cont">
+        <div class="mlist" id="mlist">
+            <ul class="nav-list">
+                <li><a href="javascript:void(0)"><span class="index">首页</span></a></li>
+                <li class="list-shop">
+                    <div class="toolbar">
+                        <a href="javascript:void(0)"><span class="hotshop">热门商品</span></a>
+                        <a href="javascript:void(0)" class="more">更多</a>
+                    </div>
+                    <ul class="shop-list">
+                        <li><a href="javascript:void(0)">品牌馆</a></li>
+                        <li><a href="javascript:void(0)">爆品馆</a></li>
+                        <li><a href="javascript:void(0)">健康馆</a></li>
+                        <li><a href="javascript:void(0)">科技馆</a></li>
+                        <li><a href="javascript:void(0)">成人馆</a></li>
+                        <li><a href="javascript:void(0)">分享馆</a></li>
+                        <li><a href="javascript:void(0)">活动馆</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)"><span class="jchd">精彩活动</span></a></li>
+                <!--<li><a href="javascript:void(0)"><span class="share">分享热榜</span></a></li>-->
+                <li class="list-my">
+                    <div class="toolbar">
+                        <a href="javascript:void(0)"><span class="my">我的</span></a>
+                        <a href="javascript:void(0)" class="more">更多</a>
+                    </div>
+                    <ul class="mylist">
+                        <li><a href="javascript:void(0)">购物车</a></li>
+                        <li><a href="javascript:void(0)">我的订单</a></li>
+                        <li><a href="javascript:void(0)">我的积分</a></li>
+                        <li><a href="javascript:void(0)">我的销售体系</a></li>
+                        <li><a href="javascript:void(0)">我的分享</a></li>
+                        <li><a href="javascript:void(0)">我的信息</a></li>
+                        <li><a href="javascript:void(0)">我的收藏</a></li>
+                    </ul>
+                </li>
+                <li class="last">
+                    <a href="javascript:void(0)" class="login">登录/注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="javascript:void(0)" class="nav_close">关闭</a>
+</div>
+<!-- login S -->
+<div class="tlBg"></div>
+<div class="tlCont">
+    <a href="javascript:void(0)" class="close ui-login-close">关闭</a>
+    <div class="bd ui-login undis">
+        <h4>登录</h4>
+        <div class="icont">
+            <input type="text" class="phone" placeholder="好就分享账号/手机号"/>
+        </div>
+        <div class="icont">
+            <input type="password" class="mima" placeholder="请输入密码"/>
+        </div>
+        <a href="javascript:void(0)" class="btn_01">登录</a>
+        <a href="javascript:void(0)" class="btn_02">注册</a>
+        <div class="uInfo">
+            <a href="javascript:void(0)" class="rmme ui-rmme">记住我</a>
+            <a href="javascript:void(0)" class="wjpw">忘记密码？</a>
+        </div>
+        <div class="title"><span>或从以下方式登录</span></div>
+        <div class="shareLink">
+            <a href="javascript:void(0)" class="qq">QQ登录</a><a href="javascript:void(0)" class="weibo">微博登录</a><a href="javascript:void(0)" class="weixin">微信登录</a>
+        </div>
+    </div>
+    <div class="bd ui-register undis">
+        <h4>欢迎注册账号</h4>
+        <div class="icont">
+            <input type="text" class="user" placeholder="请输入账号"/>
+        </div>
+        <div class="icont">
+            <input type="password" class="mima" placeholder="请输入密码"/>
+        </div>
+        <div class="icont">
+            <input type="password" class="mima" placeholder="请再次输入密码"/>
+        </div>
+        <div class="icont">
+            <input type="text" class="phone" placeholder="请输入手机号"/>
+        </div>
+        <div class="icont">
+            <div class="ibox">
+                <input type="text" class="pw" placeholder="请输入手机验证码"/>
+            </div>
+            <a href="javascript:void(0)" class="getcode">获取验证码</a>
+        </div>
+        <div class="icont">
+            <input type="text" class="pw" placeholder="邀请码"/>
+        </div>
+        <div class="uXieyi">
+            <a href="javascript:void(0)" class="rmme ui-rmme">我同意“服务条款”和“用户隐私权保护和个人信息利用政策”</a>
+        </div>
+        <a href="javascript:void(0)" class="btn_03">注册</a>
+    </div>
+    <div class="bd ui-wjmm undis">
+        <h4>找回密码</h4>
+        <div class="icont">
+            <input type="text" class="phone" placeholder="请输入手机号"/>
+        </div>
+        <a href="javascript:void(0)" class="btn_01">发送密码到手机</a>
+        <p class="tipstxt">120秒内不可重复发送</p>
+    </div>
+</div>
+<!-- login E -->
+<!-- header E -->
+<!-- wrap S -->
+<div class="wrap">
+    <div class="my-info">
+        <!--<div class="myface">-->
+            <!--<img src="../pic/pic03.png"/>-->
+        <!--</div>-->
+        <!--<div class="bd">-->
+            <!--<h3 class="name">easter_lj</h3>-->
+            <!--<div class="info">-->
+                <!--<p class="jifen">积分余额：<i>12积分</i></p>-->
+                <!--<p class="tgcode">分享推广码：mfasd12</p>-->
+                <!--<p>分享推广链接：</p>-->
+                <!--<p>http://cybershare/mfasd12</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="ewm">-->
+            <!--<img src="../pic/pic11.jpg" />-->
+            <!--<p>注册链接二维码</p>-->
+        <!--</div>-->
+    </div>
+    <div class="btns">
+        <a href="javascript:void(0)" class="ui-edit-phone">修改捆绑的手机号</a><a href="javascript:void(0)" class="ui-edit-pw">修改密码</a>
+    </div>
+    <div class="shdzCont">
+        <ul class="dzlist">
+            <!--<li class="on">
+                <div class="title">
+                    <h4>收货地址1</h4>
+                    <a href="javascript:void(0)" class="del">删除</a>
+                </div>
+                <div class="arinfo">
+                    <p>北京市海淀区中关村1号院16号楼1306栋</p>
+                    <p>关小琳／18675034490</p>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <h4>收货地址2</h4>
+                    <a href="javascript:void(0)" class="del">删除</a>
+                </div>
+                <div class="arinfo">
+                    <p>北京市海淀区中关村1号院16号楼1306栋</p>
+                    <p>关小琳／18675034490</p>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <h4>收货地址3</h4>
+                    <a href="javascript:void(0)" class="del">删除</a>
+                </div>
+                <div class="arinfo">
+                    <p>北京市海淀区中关村1号院16号楼1306栋</p>
+                    <p>关小琳／18675034490</p>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <h4>收货地址4</h4>
+                    <a href="javascript:void(0)" class="del">删除</a>
+                </div>
+                <div class="arinfo">
+                    <p>北京市海淀区中关村1号院16号楼1306栋</p>
+                    <p>关小琳／18675034490</p>
+                </div>
+            </li>-->
+        </ul>
+        <div class="dz-wiget newDz">
+            <div class="title">
+                <h4>新增收货地址</h4>
+                <!--<a href="javascript:void(0)" class="del">删除</a>-->
+            </div>
+            <div class="editAr">
+                <div class="bd">
+                    <form>
+                    <div class="selcon">
+                        <div class="selcont">
+                            <!--<div class="text"><span>-省/直辖市</span></div>-->
+                            <select name="province" class="prov-sel">
+                                <!--<option value="-1" selected>-省/直辖市-</option>-->
+                            </select>
+                        </div>
+                        <div class="selcont">
+                            <!--<div class="text"><span>-城区-</span></div>-->
+                            <select name="city" class="city-sel">
+                                <!--<option value="0" selected>-城区-</option>-->
+                            </select>
+                        </div>
+                        <div class="selcont">
+                            <!--<div class="text"><span>-地区-</span></div>-->
+                            <select name="district" class="dist-sel">
+                                <!--<option value="0" selected>-地区-</option>-->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <input name="address" type="text" placeholder="收货地址(详细地址)"/>
+                    </div>
+                    <div class="icon">
+                        <input name="name" type="text" placeholder="姓名"/>
+                    </div>
+                    <div class="icon">
+                        <input name="mobile" type="number" placeholder="联系方式"/>
+                    </div>
+                    <p class="chkbox">设定该地址为首选地址</p>
+                    <div class="tc">
+                        <a href="javascript:void(0)" class="nosavebtn">取消</a>　<a href="javascript:void(0)" class="savebtn btn-add-address">保存修改</a>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="dz-wiget modDz">
+            <div class="title">
+                <h4>修改收货地址</h4>
+                <!--<a href="javascript:void(0)" class="del">删除</a>-->
+            </div>
+            <div class="editAr">
+                <div class="bd">
+                    <form>
+                    <div class="selcon">
+                        <div class="selcont">
+                            <!--<div class="text"><span>-省/直辖市</span></div>-->
+                            <select name="province" class="prov-sel">
+                                <!--<option value="-1" selected>-省/直辖市-</option>-->
+                            </select>
+                        </div>
+                        <div class="selcont">
+                            <!--<div class="text"><span>-城区-</span></div>-->
+                            <select name="city" class="city-sel">
+                                <!--<option value="0" selected>-城区-</option>-->
+                            </select>
+                        </div>
+                        <div class="selcont">
+                            <!--<div class="text"><span>-地区-</span></div>-->
+                            <select name="district" class="dist-sel">
+                                <!--<option value="0" selected>-地区-</option>-->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <input name="address" type="text" placeholder="收货地址(详细地址)"/>
+                    </div>
+                    <div class="icon">
+                        <input name="name" type="text" placeholder="姓名"/>
+                    </div>
+                    <div class="icon">
+                        <input name="mobile" type="number" placeholder="联系方式"/>
+                    </div>
+                    <p class="chkbox on">设定该地址为首选地址</p>
+                    <div class="tc">
+                        <a href="javascript:void(0)" class="nosavebtn">取消</a>　<a href="javascript:void(0)" class="savebtn btn-edit-address">保存修改</a>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newBtnCont">
+        <a href="javascript:void(0)" class="newAr editAr"><span>增加收货地址</span></a>
+        <!-- <a href="javascript:void(0)" class="editAr defaultAr"><span>设为默认地址</span></a> -->
+    </div>
+</div>
+<!-- wrap E -->
+
+<div class="tipsBg"></div>
+<div class="tipsCont">
+    <a href="javascript:void(0)" class="close">关闭</a>
+    <div class="bd ui-delAdress undis">
+        <h4>确认删除</h4>
+        <div class="icont">
+            <span>确认删除地址么？</span>
+        </div>
+        <a href="javascript:void(0)" class="btns btn-del-address">确认</a>
+        <a href="javascript:void(0)" class="btns btn-grey btn-cancel-del-address">取消</a>
+    </div>
+    <div class="bd ui-oldPhone undis">
+        <h4>修改捆绑的手机号</h4>
+        <div class="icont">
+            <input type="password" name="pwd" class="phone pwd" placeholder="请输入账号密码"/>
+        </div>
+        <div class="icont">
+            <input type="text" name="mobile" class="phone newPhone" placeholder="请输入新手机号"/>
+        </div>
+        <div class="icont">
+            <div class="ibox">
+                <input type="text" name="verifyCode" class="pw" placeholder="请输入手机验证码"/>
+            </div>
+            <a href="javascript:void(0)" class="getcode">获取验证码</a>
+        </div>
+        <a href="javascript:void(0)" class="btns ui-next-phone">确定修改</a>
+    </div>
+
+    <div class="bd ui-newPhone undis">
+        <h4>修改捆绑的手机号</h4>
+        <div class="icont">
+            <input type="text" class="phone" placeholder="请输入新的手机号"/>
+        </div>
+        <div class="icont">
+            <div class="ibox">
+                <input type="text" class="pw" placeholder="请输入手机验证码"/>
+            </div>
+            <a href="javascript:void(0)" class="getcode">获取验证码</a>
+        </div>
+        <a href="javascript:void(0)" class="btns">绑定手机</a>
+    </div>
+    <div class="bd ui-password undis">
+        <h4>修改密码</h4>
+        <div class="icont">
+            <input id="pwdcur" type="password" class="mima pwd1" placeholder="请输入当前密码"/>
+        </div>
+        <div class="icont">
+            <input id="newpwd1" type="password" class="mima pwd2" placeholder="请输入新密码"/>
+        </div>
+        <div class="icont">
+            <input id="newpwd2" type="password" class="mima pwd3" placeholder="请再次输入新密码"/>
+        </div>
+        <a href="javascript:void(0)" class="btns modify-pwd">确认修改</a>
+        <a href="forgotpassword.html" class="forgetpw">忘记密码</a>
+    </div>
+</div>
+
+<!-- script S -->
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/myinfo.js"></script>
+<!-- script E -->
+
+</body>
+</html>

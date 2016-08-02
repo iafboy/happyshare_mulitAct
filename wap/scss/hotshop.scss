@@ -1,0 +1,187 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/9/20 10:53
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+@import "focus";
+@import "footer";
+
+.hotshop-cont{
+    .filter{
+        height: 40px;
+        line-height: 40px;
+        text-align: right;
+        padding: 0 10px;
+        a{
+            font-size: 12px;
+            color: #999999;
+            border: 1px solid #999999;
+            display: inline-block;
+            height: 16px;
+            line-height: 16px;
+            padding: 3px 10px;
+            border-radius: 14px;
+            margin: 8px 0 8px 5px;
+        }
+        a.on{
+            color: #c7a164;
+            border: 1px solid #c7a164;
+        }
+    }
+    ul.hlist{
+        overflow: hidden;
+        li{
+            //height: 107px;
+            position: relative;
+            z-index: 0;
+            background: #fff;
+            margin-bottom: 5px;
+            overflow: hidden;
+            .spic{
+                width: 130px;
+                height: 107px;
+                float: left;
+                overflow: hidden;
+                a{
+                    width: 130px;
+                    height: 107px;
+                    overflow: hidden;
+                    display: block;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+            .hinfo{
+                padding: 10px;
+                margin-left: 130px;
+                line-height: 1;
+                h2{
+                    font-size: 14px;
+                    color: #4e4a59;
+                    overflow : hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    line-height: 1.2;
+                    a{
+                        color: #4e4a59;
+                    }
+                }
+                p.ghs{
+                    font-size: 12px;
+                    color: #999999;
+                }
+                .m9{
+                    margin: 9px 0;
+                }
+                p.jifen{
+                    background: url(../images/icon_jifen.png) no-repeat;
+                    background-size: 12px;
+                    text-indent: 15px;
+                    color: #e0b653;
+                    font-size: 12px;
+                    em{
+                        background: #e0b653;
+                        color: #fff;
+                        border-radius: 2px;
+                        padding: 0 2px;
+                    }
+                    i{
+                        color: #c4c4c4;
+                    }
+                }
+                .toolbar,.toolbar2{
+                    line-height: 23px;
+                    margin-top: 9px;
+                    position: relative;
+                    z-index: 0;
+                    .mcon{
+                        //@include transform(scale(.8));
+                        //@include transform-origin(left);
+                        span.money{
+                            color: #f15353;
+                            font-size: 14px;
+                            i{
+                                font-size: 12px;
+                            }
+                        }
+                        span.oldmoney{
+                            color: #c4c4c4;
+                            text-decoration:line-through;
+                            font-size: 12px;
+                            margin-left: 3px;
+                        }
+                    }
+                    a.buy{
+                        width: 45px;
+                        height: 20px;
+                        border: 1px solid #c7a164;
+                        border-radius: 23px;
+                        background: url(../images/icon_shopmall.png) center no-repeat;
+                        background-size: 16px 13px;
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        @include transform(translate(0,-50%));
+                        text-indent: -9999px;
+                    }
+                }
+                .toolbar2{
+                    overflow: hidden;
+                    margin-top: 15px;
+                    .money{
+                        line-height: 1;
+                        color: #f15353;
+                        font-size: 14px;
+                        float: left;
+                        i{
+                            font-size: 12px;
+                        }
+                        .tj{
+                            background: #f15353;
+                            color: #fff;
+                            font-size: 12px;
+                            display: inline-block;
+                            padding: 1px 3px;
+                            border-radius: 3px;
+                            margin-top: 2px;
+                        }
+                        p.jiage{
+                            line-height: 2;
+                        }
+                    }
+                    .m-num{
+                        color: #c4c4c4;
+                        text-decoration:line-through;
+                        font-size: 12px;
+                        line-height: 1;
+                        margin-left: 5px;
+                        float: left;
+                        p:last-child{
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nosearch{
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top:200px;
+    width: 100%;
+    display: none;
+}
+

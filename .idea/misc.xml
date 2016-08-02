@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/leshare" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/20151110.txt">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/20151110.txt" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/QA.docx">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/QA.docx" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/QQLogin">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/QQLogin" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/WeiboLogin">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/WeiboLogin" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/api.txt">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/api.txt" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/config.rb">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/config.rb" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/css">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/css" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/data">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/data" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/html">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/html" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/images">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/images" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/index.html">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/index.html" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/js">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/js" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/pic">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/pic" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/scss">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/scss" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/wap_schedule.xlsx">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/wap_schedule.xlsx" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/~$接口开发列表.xlsx">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/~$%E6%8E%A5%E5%8F%A3%E5%BC%80%E5%8F%91%E5%88%97%E8%A1%A8.xlsx" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wap/接口开发列表.xlsx">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://123.57.152.218:8443/svn/lfx2015srv/wap/%E6%8E%A5%E5%8F%A3%E5%BC%80%E5%8F%91%E5%88%97%E8%A1%A8.xlsx" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

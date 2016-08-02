@@ -1,0 +1,33 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/10/1 21:06
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+@import "myinfo";
+@import "footer";
+
+body{
+    background: #fff;
+}
+
+.retipstxt{
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    line-height: 1.4;
+    margin: 15px 10px;
+}
+
+.pwerror{
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    left: 0;
+    top:0;
+    display: none;
+}

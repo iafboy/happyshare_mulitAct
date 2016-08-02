@@ -1,0 +1,4 @@
+焦点图：focus.json
+图片列表：showpic.json
+主题馆列表:ztg.json
+分享列表：sharelist.json

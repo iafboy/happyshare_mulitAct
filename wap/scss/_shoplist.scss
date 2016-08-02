@@ -1,0 +1,26 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/9/20 18:37
+ */
+
+.shoplist-cont{
+    ul.splist{
+        overflow: hidden;
+        margin: 0 -1px -1px 0;
+        li{
+            width: 33.3%;
+            float: left;
+            box-sizing: border-box;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+        li.zj{
+            width: 33.4%;
+        }
+    }
+}

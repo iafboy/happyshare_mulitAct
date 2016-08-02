@@ -1,0 +1,12 @@
+getPromotions
+缺少text字段
+
+getShareList.php
+无法打开
+Fatal error: Call to a member function writeJson() on null in C:\xampp\htdocs\leshare\newwap\APIs\getShareList.php on line 21
+
+login.php
+请提供测试帐号
+
+register.php
+请提供接收参数

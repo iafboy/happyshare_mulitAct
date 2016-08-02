@@ -1,0 +1,124 @@
+/**
+ *
+ * @authors wawow_haha@live.com
+ * @date      2015/9/28 14:08
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+@import "focus";
+@import "footer";
+
+.share-hd{
+    background: #fff;
+    overflow: hidden;
+    .spic{
+        display: block;
+        width: 240px;
+        margin: 10px auto;
+    }
+    .minfo{
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        padding: 10px 25px;
+        line-height: 2;
+        font-size: 12px;
+        i{
+            color: #8f8d96;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #cfcfcf;
+            @include transform(scaleY(.5));
+        }
+    }
+}
+
+.title-cont{
+    margin: 10px 0;
+    position: relative;
+    z-index: 0;
+    h2{
+        color: #8f8d96;
+        font-size: 14px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        span{
+            background: #eeeeee;
+            padding: 0 10px;
+        }
+    }
+    &:after{
+        content:"";
+        position: absolute;
+        bottom:12px;
+        left:0;
+        right:0;
+        border-bottom: 1px solid #cfcfcf;
+        @include transform(scaleY(.5));
+    }
+}
+
+.sharelist-cont{
+    ul.sharelist{
+        li{
+            background: #fff;
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+            .spic{
+                position: relative;
+                height: 179px;
+                z-index: 0;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            h5{
+                font-size: 16px;
+                color: #4e4a59;
+                height: 30px;
+                line-height: 30px;
+                overflow: hidden;
+                margin:10px 20px 0px;
+            }
+            .info{
+                margin: 0 20px;
+                font-size: 12px;
+                height: 25px;
+                line-height: 25px;
+                span.name{
+                    margin-right: 10px;
+                }
+                span.timer{
+                    color: #999999;
+                }
+            }
+            a{
+                display: block;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    p.moretxt{
+        font-size: 14px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        color: #999999;
+    }
+}

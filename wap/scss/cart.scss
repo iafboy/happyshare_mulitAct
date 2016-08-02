@@ -1,0 +1,244 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/9/21 23:04
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+@import "footer";
+
+.cart-crumb{
+    height: 37px;
+    line-height: 37px;
+    padding: 0 5px;
+    h2{
+        background: url(../images/icon_cart.png) 5px center no-repeat;
+        background-size: 18px 15px;
+        font-size: 14px;
+        color: #8f8d96;
+        text-indent: 30px;
+    }
+}
+.cart-cont{
+    position: absolute;
+    z-index: 1;
+    top: 82px;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    .cart-bd{
+        background: #fff;
+        margin-bottom: 10px;
+        .shop{
+            height: 33px;
+            line-height: 33px;
+            position: relative;
+            z-index: 0;
+            h3{
+                font-size: 14px;
+                span{
+                    background: url(../images/icon_rad_02.png) 10px center no-repeat;
+                    background-size: 17px;
+                    display: block;
+                    float: left;
+                    text-indent: 35px;
+                }
+                span.on{
+                    background: url(../images/icon_rad_01.png) 10px center no-repeat;
+                    background-size: 17px;
+                }
+            }
+            &:after{
+                content:"";
+                position: absolute;
+                bottom:0;
+                left:0;
+                right:0;
+                border-bottom: 1px solid #e9e9e9;
+                @include transform(scaleY(.5));
+            }
+        }
+        ul.items{
+            li{
+                position: relative;
+                z-index: 0;
+                padding: 10px 0;
+                height: 78px;
+                margin:0 15px 0 35px;
+                .spic{
+                    width: 78px;
+                    height: 78px;
+                    float: left;
+                    img{
+                        width: 78px;
+                        height: 78px;
+                        display: block;
+                    }
+                }
+                .info{
+                    margin-left: 88px;
+                    h2{
+                        font-size: 12px;
+                        color: #4e4a59;
+                    }
+                    p.jiage{
+                        line-height: 1;
+                        margin: 5px 0;
+                        span{
+                            font-size: 14px;
+                            color: #f15353;
+                            margin-right: 10px;
+                        }
+                        em.jf{
+                            font-size: 12px;
+                            color: #e0b653;
+                            background: url(../images/icon_jifen.png) 0 center no-repeat;
+                            background-size: 12px;
+                            text-indent: 15px;
+                            display: inline-block;
+                        }
+                    }
+                    .numbox{
+                        width: 75px;
+                        height: 20px;
+                        line-height: 20px;
+                        border: 1px solid #b8b8b8;
+                        border-radius: 5px;
+                        a{
+                            display: block;
+                            width: 21px;
+                            float: left;
+                            text-align: center;
+                            text-indent: -9999px;
+                        }
+                        .num{
+                            width: 31px;
+                            border-left: 1px solid #b8b8b8;
+                            border-right: 1px solid #b8b8b8;
+                            text-align: center;
+                            float: left;
+                            font-size: 12px;
+                        }
+                        a.sub{
+                            background: url(../images/icon_jian_01.png) center no-repeat;
+                            background-size: 9px 1px;
+                        }
+                        a.add{
+                            background: url(../images/icon_jia.png) center no-repeat;
+                            background-size: 9px;
+                        }
+                    }
+                }
+                .selbtn{
+                    position: absolute;
+                    top: 50%;
+                    width: 17px;
+                    height: 17px;
+                    @include transform(translate(0,-50%));
+                    left:-25px;
+                    background: url(../images/icon_rad_02.png) no-repeat;
+                    background-size: 17px;
+                    display: block;
+                }
+                &:after{
+                    content:"";
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    border-bottom: 1px dashed #e9e9e9;
+                    @include transform(scaleY(.5));
+                }
+            }
+            li:last-child{
+                &:after{
+                    border-bottom: none;
+                }
+            }
+            li.on{
+                .selbtn{
+                    position: absolute;
+                    top: 50%;
+                    width: 17px;
+                    height: 17px;
+                    @include transform(translate(0,-50%));
+                    left:-25px;
+                    background: url(../images/icon_rad_01.png) no-repeat;
+                    background-size: 17px;
+                    display: block;
+                }
+            }
+        }
+        .extra{
+            background: #f7f6f6;
+            padding: 10px 20px;
+            p{
+                font-size: 12px;
+                i{
+                    color: #c7a164;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.cart-sum{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: #fff;
+    box-shadow: 0px 0 5px #e9e9e9;
+    .bd{
+        height: 70px;
+        position: relative;
+        padding: 0 50px 0 35px;
+        p{
+            line-height: 70px;
+            font-size: 12px;
+            i.money{
+                color: #f15353;
+                font-size: 20px;
+                margin-left: 5px;
+                line-height: 1;
+                display: inline-block;
+            }
+        }
+        .chk{
+            padding-top: 37px;
+            height: 19px;
+            background: url(../images/icon_rad_02.png) 10px center no-repeat;
+            background-size: 17px;
+            position: absolute;
+            width: 40px;
+            left: 0;
+            top: 0;
+            color: #999999;
+            font-size: 12px;
+            text-align: center;
+        }
+        .chk.on{
+            background: url(../images/icon_rad_01.png) 10px center no-repeat;
+            background-size: 17px;
+        }
+        a.buy{
+            width: 55px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 23px;
+            background: #c7a164;
+            border-radius: 25px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}

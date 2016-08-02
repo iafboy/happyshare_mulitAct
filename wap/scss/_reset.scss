@@ -1,0 +1,66 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/9/16 21:28
+ */
+
+body,div,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,iframe,input,textarea,select,label,article,aside,footer,header,menu,nav,section,time,audio,video{margin:0;padding:0;}
+article,aside,footer,header,hgroup,nav,section,audio,canvas,video,img{display:block;}
+body{font-size:100%;font-family:'STXihei','Microsoft Yahei','Helvetica Neue','helvetica','arial';-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+textarea{resize:none;}
+iframe,img{border:0;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:0;-webkit-user-modify:read-write-plaintext-only;}
+input{-webkit-appearance:none;}
+a{text-decoration:none;}
+i,em{font-style: normal;}
+.dis{display: block;}
+.undis{display: none;}
+.fl{ float: left;}
+.fr{ float: right;}
+
+body{
+    font-size: 14px;
+    background: #eeeeee;
+}
+
+.tc{text-align: center;}
+.tl{text-align: left;}
+.tr{text-align: right;}
+
+.f12px{
+    font-size: 12px;
+}
+.f14px{
+    font-size: 14px;
+}
+.f16px{
+    font-size: 16px;
+}
+
+.mt10{margin-top: 10px;}
+.ml10{margin-left: 10px;}
+.mr10{margin-right: 10px;}
+.mb10{margin-bottom: 10px;}
+
+.mt-10{margin-top: -10px;}
+.ml-10{margin-left: -10px;}
+.mr-10{margin-right: -10px;}
+.mb-10{margin-bottom: -10px;}
+
+@mixin img($width,$height,$src){
+    width:$width;
+    height:$height;
+    background: url($src) no-repeat;
+    background-size: $width $height;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 0;
+}
+
+@mixin elmcenter(){
+    @include transform(translate(-50%,-50%));
+    left: 50%;
+    top: 50%;
+}

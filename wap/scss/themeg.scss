@@ -1,0 +1,62 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/10/2 22:01
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+@import "focus";
+
+.themeg{
+    ul.tlist{
+        overflow: hidden;
+        margin: 10px;
+        li{
+            margin-bottom: 10px;
+            overflow: hidden;
+            padding: 10px;
+            background: #fff;
+            a{
+                color: #4A4A4A;
+            }
+            img{
+                float: left;
+                width: 85px;
+                height: 85px;
+                display: block;
+            }
+            .cont{
+                margin-left: 95px;
+                color: #4e4a59;
+                h2{
+                    font-size: 16px;
+                    line-height: 1;
+                    overflow: hidden;
+                    margin-bottom: 5px;
+                }
+                p{
+                    line-height: 1.8;
+                    font-size: 12px;
+                }
+                a.btn{
+                    color: #c7a164;
+                    border: 1px solid #c7a164;
+                    display: block;
+                    width: 100px;
+                    height: 25px;
+                    line-height: 25px;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 12px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        li:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

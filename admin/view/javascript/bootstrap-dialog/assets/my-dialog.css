@@ -1,0 +1,55 @@
+.my-dialog {
+  font-family: 'Microsoft Yahei';
+}
+.my-dialog .modal-content .modal-header {
+  padding: 5px !important;
+}
+.my-dialog .modal-content .modal-header .bootstrap-dialog-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.my-dialog .modal-content .modal-footer {
+  padding: 5px;
+}
+.my-dialog .modal-content .modal-body {
+  padding: 10px;
+}
+.my-dialog.type-danger .modal-content {
+  border: none;
+}
+.my-dialog.type-danger .modal-content .modal-header {
+  display: none;
+}
+.my-dialog.type-danger .modal-content .modal-body {
+  background-color: #FEF1F1;
+  border-radius: 5px;
+  padding: 20px;
+  color: #F56B6B;
+}
+.my-dialog.type-warning .modal-header {
+  background: #FF8C00;
+}
+.my-dialog.type-success .modal-content {
+  border: none;
+}
+.my-dialog.type-success .modal-content .modal-header {
+  display: none;
+}
+.my-dialog.type-success .modal-content .modal-body {
+  background-color: #E5F2CE;
+  border-radius: 5px;
+  padding: 20px;
+  color: #8FBB6C;
+}
+.my-dialog.type-primary .modal-header {
+  background: #5F9EA0;
+}
+.my-dialog.type-default .modal-header {
+  background: #e4e4e4;
+}
+.my-dialog.type-default .modal-header .bootstrap-dialog-title {
+  color: #A9A9A9;
+}
+.modal-backdrop {
+  background-color: #e4e4e4;
+}

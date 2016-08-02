@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta />
+    <script src="../../../admin/view/javascript/jquery/jquery-2.1.1.min.js"></script>
+    <script>
+
+        function postFiles(){
+            commonFileUpload('fileuploader.php?directory=temp&file_name=xxxxxx',{},function(data){
+                alert(data);
+            });
+
+        }
+
+        function commonFileUpload(url,data,callback,before,complete){
+            $('#form-upload').remove();
+            var html =
+                    '<form enctype="multipart/form-data" id="form-upload" method="post" style="display: none;">' +
+                    '<input type="file" name="file" value="" />';
+            for(var key in data){
+                html = html + '<input type="hidden" name="'+key+'" value="'+data[key]+'" />';
+            }
+            html
+                    +='</form>';
+            $('body').prepend(html);
+            $('#form-upload input[name=\'file\']').trigger('click');
+            timer = setInterval(function() {
+                if ($('#form-upload input[name=\'file\']').val() != '') {
+                    clearInterval(timer);
+
+                    $.ajax({
+                        url: url ,
+                        type: 'post',
+                        dataType: 'json',
+                        data: new FormData($('#form-upload')[0]),
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        beforeSend: function() {
+                            if(before){
+                                before();
+                            }
+                        },
+                        complete: function() {
+                            if(complete){
+                                complete();
+                            }
+                        },
+                        success: function(json) {
+                            if(json.success===true){
+                                if(callback){
+                                    callback(json);
+                                }
+                            }else{
+                                alert(json.error);
+                            }
+                        },
+                        error: function(xhr, ajaxOptions, thrownError) {
+//                            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                            console.log(xhr.responseText);
+                        }
+                    });
+                }
+            }, 500);
+        }
+
+    </script>
+</head>
+<body>
+
+    <button onclick="postFiles()">aaa</button>
+
+
+</body>
+
+</html>

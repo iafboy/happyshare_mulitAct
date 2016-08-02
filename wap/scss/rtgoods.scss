@@ -1,0 +1,393 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/10/8 21:45
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+
+.goodsinfo{
+    background: #fff;
+    margin-bottom: 10px;
+    .title{
+        height: 33px;
+        line-height: 33px;
+        position: relative;
+        z-index: 0;
+        h3{
+            font-size: 14px;
+            text-indent: 15px;
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            border-bottom: 1px solid #e9e9e9;
+            @include transform(scaleY(.5));
+        }
+    }
+    .bd{
+        position: relative;
+        z-index: 0;
+        padding: 15px 0;
+        height: 78px;
+        margin:0 15px;
+        .spic{
+            width: 78px;
+            height: 78px;
+            float: left;
+            img{
+                width: 78px;
+                height: 78px;
+                display: block;
+            }
+        }
+        .info{
+            margin-left: 88px;
+            margin-right: 25px;
+            h2{
+                font-size: 12px;
+                color: #4e4a59;
+                margin: 10px 0;
+            }
+            p.jiage{
+                line-height: 1;
+                margin: 5px 0;
+                span{
+                    font-size: 14px;
+                    color: #f15353;
+                    margin-right: 10px;
+                }
+                em.jf{
+                    font-size: 12px;
+                    color: #e0b653;
+                    background: url(../images/icon_jifen.png) 0 center no-repeat;
+                    background-size: 12px;
+                    text-indent: 15px;
+                    display: inline-block;
+                }
+            }
+        }
+        .num{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            @include transform(translate(0,-50%));
+            font-size: 14px;
+            line-height: 1;
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            border-bottom: 1px dashed #e9e9e9;
+            @include transform(scaleY(.5));
+        }
+    }
+}
+
+.thinfo{
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    p.title{
+        height: 43px;
+        line-height: 43px;
+        overflow: hidden;
+        text-align: center;
+        color: #999999;
+        font-size: 12px;
+        span{
+            background: url(../images/icon_th.png) left center no-repeat;
+            background-size: 16px;
+            padding-left: 20px;
+        }
+    }
+    .telcon{
+        text-align: center;
+        .kfcon{
+            border: 1px solid #e5e5e5;
+            display: inline-block;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px 15px;
+            margin: 0 5px;
+            line-height: 1.5;
+            color: #4e4a59;
+            p.tel{
+                font-size: 14px;
+                color: #c7a164;
+                margin: 5px 0;
+            }
+        }
+    }
+    p.tips{
+        font-size: 12px;
+        color: #999999;
+        margin: 10px 30px;
+        line-height: 1.5;
+    }
+}
+
+.threason{
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    .title{
+        height: 33px;
+        line-height: 33px;
+        position: relative;
+        z-index: 0;
+        h3{
+            font-size: 14px;
+            text-indent: 15px;
+            float: left;
+        }
+        ul.thMenu{
+            float: right;
+            margin-right: 15px;
+            li{
+                float: left;
+                height: 20px;
+                line-height: 20px;
+                font-size: 12px;
+                border: 1px solid #b4b4b4;
+                color: #b4b4b4;
+                padding: 0 10px;
+                border-radius: 25px;
+                margin: 5px 0 4px 5px;
+            }
+            li.on{
+                border: 1px solid #c7a164;
+                color: #c7a164;
+            }
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            border-bottom: 1px solid #e9e9e9;
+            @include transform(scaleY(.5));
+        }
+    }
+    .thCont{
+        .rslist{
+            overflow: hidden;
+            padding: 5px 0;
+            li{
+                height: 36px;
+                line-height: 36px;
+                background: url(../images/icon_rad_02.png) 20px center no-repeat;
+                background-size: 18px;
+                text-indent: 48px;
+                font-size: 12px;
+                color: #8f8d96;
+            }
+            li.on{
+                background: url(../images/icon_rad_01.png) 20px center no-repeat;
+                background-size: 18px;
+            }
+        }
+        .icon{
+            margin: 0 20px;
+            label{
+                vertical-align: top;
+                font-size: 12px;
+                color: #8f8d96;
+                float: left;
+            }
+            .bd{
+                margin-left: 40px;
+                textarea{
+                    width: 100%;
+                    box-sizing: border-box;
+                    height: 40px;
+                    border: 1px solid #d8d8d8;
+                    background: #eeeeee;
+                    display: block;
+                }
+            }
+            p{
+                color: #c7a164;
+                font-size: 12px;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+.thziliao{
+    background: #fff;
+    padding: 5px 0;
+    .icon{
+        overflow: hidden;
+        margin: 10px 15px;
+        .title{
+            width: 120px;
+            float: left;
+            font-size: 12px;
+            color: #8f8d96;
+        }
+        .title1{
+            line-height: 49px;
+        }
+        .title2{
+            line-height: 25px;
+        }
+        .ibox{
+            margin-left: 120px;
+            position: relative;
+            z-index: 0;
+            .uploadpic{
+                width: 70px;
+                height: 49px;
+                display: block;
+            }
+            input.upfile{
+                width: 70px;
+                height: 49px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 0;
+                opacity: 0;
+            }
+            input.text{
+                width: 100px;
+                box-sizing: border-box;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                color: #8f8d96;
+                border: 1px solid #d8d8d8;
+                background: #eeeeee;
+                display: block;
+            }
+        }
+    }
+}
+
+.thliyou{
+    padding: 10px 15px;
+    background: #fff;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    h5{
+        font-size: 14px;
+        color: #4e4a59;
+    }
+    p{
+        font-size: 12px;
+        color: #999999;
+    }
+}
+.thAdr{
+    background: #fff;
+    overflow: hidden;
+    .title{
+        height: 33px;
+        line-height: 33px;
+        position: relative;
+        z-index: 0;
+        h3{
+            font-size: 14px;
+            text-indent: 15px;
+            float: left;
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            border-bottom: 1px solid #e9e9e9;
+            @include transform(scaleY(.5));
+        }
+    }
+    .adrCont{
+        line-height: 1.5;
+        padding: 15px 0;
+        p{
+            font-size: 12px;
+            color: #999999;
+            text-indent: 15px;
+        }
+    }
+    .icont{
+        padding:15px;
+        overflow: hidden;
+        .isel{
+            width: 130px;
+            height: 25px;
+            float: left;
+            position: relative;
+            z-index: 0;
+            .text{
+                border: 1px solid #d8d8d8;
+                background: #eeeeee;
+                width: 130px;
+                height: 25px;
+                line-height: 25px;
+                border-radius: 3px;
+                box-sizing: border-box;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 0;
+                color: #8f8d96;
+                text-indent: 10px;
+                font-size: 12px;
+                span{
+                    background: url(../images/icon_more_03.png) right center no-repeat;
+                    background-size: 11px 6px;
+                    display: block;
+                    margin-right: 10px;
+                }
+            }
+            select{
+                width: 100%;
+                height: 25px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                opacity: 0;
+            }
+        }
+        .itext{
+            margin-left: 140px;
+            input{
+                width: 100%;
+                height: 25px;
+                line-height: 25px;
+                border-radius: 3px;
+                border: 1px solid #d8d8d8;
+                background: #eeeeee;
+                box-sizing: border-box;
+                text-indent: 5px;
+                color: #8f8d96;
+            }
+        }
+    }
+}
+
+a.smBtn{
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 25px;
+    background: #c7a164;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 15px auto;
+}

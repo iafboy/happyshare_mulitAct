@@ -1,0 +1,66 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/10/1 21:06
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+@import "footer";
+
+.mc-cont{
+    width: 100%;
+    overflow: hidden;
+    .mclist{
+        overflow: hidden;
+        margin-right: -2px;
+        li{
+            width: 50%;
+            box-sizing: border-box;
+            border-right: 2px solid #eeeeee;
+            border-bottom: 2px solid #eeeeee;
+            float: left;
+            background: #fff;
+            .spic{
+                height: 118px;
+                overflow: hidden;
+                img{
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            p{
+                font-size: 12px;
+                color: #4e4a59;
+                line-height: 1.5;
+                height: 36px;
+                overflow: hidden;
+                margin:10px;
+                a{
+                    color: #4e4a59;
+                }
+            }
+            a.shoucang{
+                width: 65px;
+                height: 23px;
+                line-height: 23px;
+                border-radius: 23px;
+                text-align: center;
+                color: #c7a164;
+                border: 1px solid #c7a164;
+                font-size: 12px;
+                display: block;
+                margin: 10px auto;
+                padding: 0 5px;
+                span{
+                    background: url(../images/icon_del.png) left center no-repeat;
+                    background-size: 11px;
+                    padding-left: 14px;
+                }
+            }
+        }
+    }
+}

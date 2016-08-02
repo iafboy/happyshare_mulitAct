@@ -1,0 +1,130 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/9/30 15:12
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+@import "focus";
+
+.btns{
+    background: #fff;
+    overflow: hidden;
+    a.btn{
+        width: 140px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        border-radius: 25px;
+        display: block;
+        margin: 20px auto;
+        background: #c7a164;
+    }
+    p{
+        color: #8f8d96;
+        font-size: 12px;
+        text-align: center;
+        margin: 20px auto;
+    }
+}
+
+.splist{
+    margin: 0 5px;
+    h3 {
+        height: 55px;
+        line-height: 55px;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        color: #a7a5ac;
+        text-align: center;
+        font-size: 14px;
+        span{
+            padding: 0 10px;
+            background: #eeeeee;
+            position: relative;
+            z-index: 1;
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            bottom:26px;
+            left:5px;
+            right:5px;
+            border-bottom: 1px solid #d1d1d1;
+            @include transform(scaleY(.5));
+        }
+    }
+    .title{
+        height: 33px;
+        line-height: 33px;
+        font-size: 14px;
+        color: #4e4a59;
+        text-indent: 15px;
+        background: #fff;
+        border-radius: 3px 3px 0 0;
+    }
+    .topic{
+        width: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            display: block;
+
+        }
+    }
+    .bd{
+        background: #fff;
+        overflow: hidden;
+        border-radius: 0 0 3px 3px;
+        .info{
+            padding: 5px 20px;
+            position: relative;
+            z-index: 0;
+            h2{
+                font-size: 16px;
+                color: #4e4a59;
+                margin-bottom: 5px;
+                i{
+                    font-size: 18px;
+                    color: #f15353;
+                    em{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        a.btns{
+            width: 140px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            border-radius: 25px;
+            display: block;
+            margin: 20px auto;
+            background: #c7a164;
+        }
+        .desc{
+            margin: 0 20px;
+            line-height: 1.5;
+            overflow: hidden;
+            padding-bottom: 10px;
+            h5{
+                font-size: 14px;
+                color: #4e4a59;
+            }
+            p{
+                font-size: 12px;
+                color: #8f8d96;
+                line-height: 1.8;
+            }
+        }
+    }
+}

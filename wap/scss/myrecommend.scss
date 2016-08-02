@@ -1,0 +1,143 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/10/9 20:52
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+
+.tjgoods{
+    background: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+    .title{
+        height: 33px;
+        line-height: 33px;
+        position: relative;
+        z-index: 0;
+        h3{
+            font-size: 14px;
+            text-indent: 15px;
+            float: left;
+            i{
+                font-size: 12px;
+                margin-left: 5px;
+                color: #8f8d96;
+            }
+        }
+        a.addbtn{
+            border: 1px solid #c7a164;
+            color: #c7a164;
+            height: 23px;
+            line-height: 23px;
+            padding: 0 15px;
+            display: block;
+            float: right;
+            margin: 0px 15px 8px 0;
+            border-radius: 25px;
+            font-size: 12px;
+            span{
+                background: url(../images/icon_add_01.png) right center no-repeat;
+                background-size: 12px;
+                padding-right: 15px;
+            }
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            border-bottom: 1px solid #e9e9e9;
+            @include transform(scaleY(.5));
+        }
+    }
+    .tjreason{
+        margin: 0 25px;
+        padding: 0 0 10px 0;
+        .icont{
+            position: relative;
+            z-index: 0;
+            padding: 15px 0 10px;
+            line-height: 1.5;
+            overflow: hidden;
+            .tit{
+                font-size: 12px;
+                color: #8f8d96;
+                float: left;
+            }
+            .tit1{
+                line-height: 25px;
+            }
+            .edit{
+                font-size: 12px;
+                color: #4e4a59;
+            }
+            .money{
+                background: #eeeeee;
+                color: #f15353;
+                float: left;
+                font-size: 12px;
+                height: 25px;
+                line-height: 25px;
+                width: 100px;
+                text-indent: 5px;
+                border-radius: 3px;
+                overflow: hidden;
+                font-weight: bold;
+            }
+            &:after{
+                content:"";
+                position: absolute;
+                bottom:0;
+                left:0;
+                right:0;
+                border-bottom: 1px solid #e9e9e9;
+                @include transform(scaleY(.5));
+            }
+        }
+    }
+    ul.piclist{
+        margin: 20px auto;
+        width: 250px;
+        overflow: hidden;
+        li{
+            width: 115px;
+            float: left;
+            margin:5px;
+            position: relative;
+            z-index: 0;
+            img{
+                width: 100%;
+                height: 81px;
+                display: block;
+            }
+            a.del{
+                width: 19px;
+                height: 19px;
+                background: url(../images/icon_del_02.png) no-repeat;
+                background-size: 19px;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                z-index: 0;
+                display: block;
+                text-indent: -9999px;
+            }
+        }
+    }
+    a.smBtn{
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 25px;
+        background: #c7a164;
+        color: #fff;
+        text-align: center;
+        display: block;
+        margin: 15px auto;
+    }
+}

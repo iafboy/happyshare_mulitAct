@@ -1,0 +1,229 @@
+/*chrome outline*/
+button,input,textarea,select{
+    outline: none !important;
+}
+
+button.lfx-btn{
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+}
+input.lfx-text{
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    width: 200px;
+}
+textarea.lfx-text{
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    width: 200px;
+}
+input.lfx-text-sm,
+select.lfx-text-sm{
+    width: 100px;
+}
+input.lfx-text-xs,
+select.lfx-text-xs{
+    width: 80px;
+}
+input.lfx-text-lg,
+select.lfx-text-lg{
+    width: 400px;
+}
+select.lfx-select{
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    width: 200px;
+}
+span.breadcrumb-cur{
+    color: #006dcc;
+}
+.pointer{
+    cursor:pointer;
+}
+span.lfx-label{
+    display:inline-block;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom:2px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+}
+span.lfx-label-on{
+    background-color: #666;
+    color: white;
+    border-color:#666;
+}
+
+#container .leshare-logo{
+
+}
+
+input.w-1,
+label.w-1,
+div.w-1,
+span.w-1,
+select.w-1{
+    width: 10%;
+    display: inline-block;
+}
+input.w-2,
+label.w-2,
+div.w-2,
+span.w-2,
+select.w-2{
+    width: 20%;
+    display: inline-block;
+}
+
+input.w-3,
+label.w-3,
+div.w-3,
+span.w-3,
+select.w-3{
+    width: 30%;
+    display: inline-block;
+}
+
+input.w-4,
+label.w-4,
+div.w-4,
+span.w-4,
+select.w-4{
+    width: 40%;
+    display: inline-block;
+}
+
+input.w-5,
+label.w-5,
+div.w-5,
+span.w-5,
+select.w-5{
+    width: 50%;
+    display: inline-block;
+}
+input.w-6,
+label.w-6,
+div.w-6,
+span.w-6,
+select.w-6{
+    width: 60%;
+    display: inline-block;
+}
+input.w-7,
+label.w-7,
+div.w-7,
+span.w-7,
+select.w-7{
+    width: 70%;
+    display: inline-block;
+}
+
+input.w-8,
+label.w-8,
+div.w-8,
+span.w-8,
+select.w-8{
+    width: 80%;
+    display: inline-block;
+}
+
+input.w-9,
+label.w-9,
+div.w-9,
+span.w-9,
+select.w-9{
+    width: 90%;
+    display: inline-block;
+}
+input.w-10,
+label.w-10,
+div.w-10,
+span.w-10,
+select.w-10{
+    width: 100%;
+    display: inline-block;
+}
+
+div.frame-pic .img-box:hover{
+    background-color: black;
+    opacity: 0.3;
+}
+div.frame-pic .img-box,
+div.frame-pic .img-mask
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+div.frame-pic .img-mask .oper-box:hover{
+    color: #f56b6b;
+    cursor:pointer;
+}
+div.frame-pic .img-mask .oper-box{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    right: 0px;
+    color:#666;
+    font-size: 30px;
+    z-index: 20;
+    display: inline-block;
+}
+div.frame-pic {
+    margin-bottom:20px;
+}
+div.frame-pic > div.img-bd{
+    position: relative;
+    padding: 5px;
+}
+
+table.lfx-table tr td{
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.keleyitoolbar {
+position: absolute;
+top: 15px;
+right: 15px;
+}
+
+.imagebox {
+position: relative;
+list-style-type: none;
+border: 0px solid #ccc;
+margin-right: 6px;
+margin-bottom: 6px;
+float: left;
+}
+
+.keleyitoolbar_add {
+position: absolute;
+top: 40px;
+right: 40px;
+}
+
+.keleyitoolbar_add1 {
+position: absolute;
+top:60px;
+right: 60px;
+}
+
+
+

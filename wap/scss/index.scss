@@ -1,0 +1,232 @@
+/**
+ * 
+ * @authors wawow_haha@live.com
+ * @date      2015/9/16 20:59
+ */
+
+@import "reset";
+@import "compass";
+
+@import "header";
+@import "focus";
+@import "showpiclist";
+@import "footer";
+
+.wrap{
+    .mc{
+        margin: 4px 3px;
+        background: #fff;
+        height: 70px;
+        .mlist{
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+            height: 70px;
+            li{
+                width: 25%;
+                float: left;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                font-size: 14px;
+                color: #4e4a59;
+                padding-top: 45px;
+            }
+            li.l01{
+                background: url(../images/index/bg_mc_01.png) center 12px no-repeat;
+                background-size: 32px 32px;
+            }
+            li.l02{
+                background: url(../images/index/bg_mc_02.png) center 12px no-repeat;
+                background-size: 32px 32px;
+            }
+            li.l03{
+                background: url(../images/index/bg_mc_03.png) center 12px no-repeat;
+                background-size: 32px 32px;
+            }
+            li.l04{
+                background: url(../images/index/bg_mc_04.png) center 12px no-repeat;
+                background-size: 32px 32px;
+            }
+        }
+    }
+    .title-cont{
+        margin: 10px 0;
+        position: relative;
+        z-index: 0;
+        h2{
+            color: #8f8d96;
+            font-size: 14px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            span{
+                background: #eeeeee;
+                padding: 0 10px;
+            }
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            bottom:12px;
+            left:0;
+            right:0;
+            border-bottom: 1px solid #cfcfcf;
+            @include transform(scaleY(.5));
+        }
+    }
+    .ztlist-cont{
+         width: 100%;
+         overflow: hidden;
+         ul.ztlist{
+             overflow: hidden;
+             li{
+                 height: 107px;
+                 overflow: hidden;
+                 float: left;
+                 box-sizing: border-box;
+                 margin:0 5px 5px 0;
+                 a{
+                     position: relative;
+                     height: 107px;
+                     z-index: 0;
+                     display: block;
+                 }
+                 img{
+                     width: 100%;
+                     display: block;
+                 }
+                 .bd{
+                     width: 100%;
+                     height: 30px;
+                     line-height: 30px;
+                     box-sizing: border-box;
+                     padding: 0 18px;
+                     position: absolute;
+                     bottom: 0;
+                     left: 0;
+                     z-index: 1;
+                     background: rgba(0,0,0,.6);
+                     h4{
+                         color: #fff;
+                         font-size: 12px;
+                         float: left;
+                     }
+                     em.more{
+                         width: 10px;
+                         height: 30px;
+                         background: url(../images/icon_more.png) right center no-repeat;
+                         background-size: 5px 8px;
+                         float: right;
+                         text-indent: -9999px;
+                     }
+                 }
+             }
+         }
+     }
+    .brandlist-cont{
+        width: 100%;
+        overflow: hidden;
+        ul.brandlist{
+            overflow: hidden;
+            li{
+                height: 107px;
+                overflow: hidden;
+                float: left;
+                box-sizing: border-box;
+                margin:0 5px 5px 0;
+                a{
+                    position: relative;
+                    height: 107px;
+                    z-index: 0;
+                    display: block;
+                }
+                img{
+                    width: 100%;
+                    display: block;
+                }
+                .bd{
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    box-sizing: border-box;
+                    padding: 0 18px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                    background: rgba(0,0,0,.6);
+                    h4{
+                        color: #fff;
+                        font-size: 12px;
+                        float: left;
+                    }
+                    em.more{
+                        width: 10px;
+                        height: 30px;
+                        background: url(../images/icon_more.png) right center no-repeat;
+                        background-size: 5px 8px;
+                        float: right;
+                        text-indent: -9999px;
+                    }
+                }
+            }
+        }
+    }
+    .sharelist-cont{
+        ul.sharelist{
+            li{
+                background: #fff;
+                margin-bottom: 5px;
+                padding-bottom: 10px;
+                .spic{
+                    position: relative;
+                    height: 179px;
+                    z-index: 0;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                h5{
+                    font-size: 16px;
+                    color: #4e4a59;
+                    height: 30px;
+                    line-height: 30px;
+                    overflow: hidden;
+                    margin:10px 20px 0px;
+                }
+                .info{
+                    margin: 0 20px;
+                    font-size: 12px;
+                    height: 25px;
+                    line-height: 25px;
+                    span.name{
+                        margin-right: 10px;
+                        color: #999999;
+                    }
+                    span.timer{
+                        color: #999999;
+                    }
+                }
+                a{
+                    display: block;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        p.moretxt{
+            font-size: 14px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+            color: #999999;
+        }
+    }
+}
